@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "types": ["@types/jest"],
+    "outDir": "./dist",
+    "moduleResolution": "NodeNext",
+    "noEmit": true
+  },
+  "include": ["**/*.ts", "**/*.cjs", "**/*.js", "**/*.json", "../db/types"],
+  "exclude": ["dist/**/*", "core/helix.ts", "vite.config.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
